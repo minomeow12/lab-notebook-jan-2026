@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,12 +7,61 @@
     <title>Exercise 04 - Modals</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="../_styles/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <h1>04 - Bootstrap Modal</h1>
-    <!-- Add your code here -->
+    <main class="container">
+      <div class="text-center mx-auto">
+        <h1 class="my-5">04 - Bootstrap Modal</h1>
+        <!-- Add your code here -->
+        <!-- Button trigger modal -->
+        <div class="mb-4">
+          Click on the button below for more information inside a modal
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#modal"
+        >
+          More Details
+        </button>
+      </div>
+      <div class="modal fade" id="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">More Details</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              nostrum harum ipsam ipsa eum accusamus temporibus tenetur ab
+              dignissimos? Reiciendis adipisci repellendus minus! Consectetur
+              nihil vero ea qui cupiditate non!
+            </div>
+
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
